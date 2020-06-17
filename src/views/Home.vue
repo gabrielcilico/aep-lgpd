@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <div class="nes-container is-rounded">
+      <p>Salve rapaziada, teste da LGPD</p>
+    </div>
     <LoginCard />
   </div>
 </template>
@@ -21,5 +24,12 @@ export default {
   justify-content: center;
   align-content: center;
   padding: 30px;
+}
+
+.nes-container{
+  color: black;
+  background: aliceblue;
+  
+
 }
 </style>
