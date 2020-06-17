@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       question: {
-        number: 1,
+        number: 6,
         question:
           "Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Atirei o pau no gatis, per gatis num morreus. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Copo furadis é disculpa de bebadis, arcu quam euismod magna.",
         answers: [
