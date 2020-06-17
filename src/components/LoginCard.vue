@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     validate() {
-      this.$router.push("/game/");
+      this.$router.push("/game");
     }
   }
 };
