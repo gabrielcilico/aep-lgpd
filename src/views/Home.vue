@@ -1,35 +1,41 @@
 <template>
-  <div class="container">
-    <div class="nes-container is-rounded">
-      <p>Salve rapaziada, teste da LGPD</p>
+  <div class="content">
+    <div class="container">
+      <MessageCard :message="message" />
     </div>
-    <LoginCard />
+    <div class="container">
+      <LoginCard />
+    </div>
   </div>
 </template>
 
 <script>
 import LoginCard from "@/components/LoginCard.vue";
+import MessageCard from "@/components/MessageCard.vue";
 
 export default {
   name: "Home",
   components: {
-    LoginCard
+    LoginCard,
+    MessageCard
+  },
+  data() {
+    return {
+      message: "Seja bem vindo! Escolha um nome e comece a jogar!"
+    };
   }
 };
 </script>
 
 <style scoped>
+.content {
+  display: flex;
+  flex-direction: column;
+}
 .container {
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 30px;
-}
-
-.nes-container{
-  color: black;
-  background: aliceblue;
-  
-
 }
 </style>
