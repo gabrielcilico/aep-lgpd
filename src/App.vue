@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
+import Header from "@/components/Header.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    Header,
-  },
+    Header
+  }
 };
 </script>
 
@@ -21,6 +21,9 @@ export default {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
+}
+body {
+  background-image: url("assets/img/background.png");
 }
 </style>
