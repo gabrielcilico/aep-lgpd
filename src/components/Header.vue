@@ -2,7 +2,6 @@
   <header>
     <h1 class="nes-text is-primary">Quiz LGPD</h1>
     <nav>
-      <router-link class="nes-btn" to="/game">Recomeçar</router-link>
       <router-link class="nes-btn" to="/">Desistir</router-link>
     </nav>
   </header>

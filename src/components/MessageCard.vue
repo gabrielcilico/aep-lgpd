@@ -2,7 +2,7 @@
   <section class="card">
     <i class="nes-bcrikko"></i>
     <p class="nes-balloon from-left nes-pointer">
-      {{ message }}
+      {{ typeValue }}
     </p>
   </section>
 </template>
@@ -15,6 +15,24 @@ export default {
       type: String,
       default: "Seja bem vindo! Escolha um nome e comece a jogar!"
     }
+  },
+  data() {
+    return {
+      typeValue: ""
+    };
+  },
+  methods: {
+    messageWriter() {
+      let arrayMessage = this.message.split("");
+      arrayMessage.forEach((letter, index) => {
+        setTimeout(() => {
+          this.typeValue += letter;
+        }, 75 * index);
+      });
+    }
+  },
+  mounted() {
+    this.messageWriter();
   }
 };
 </script>

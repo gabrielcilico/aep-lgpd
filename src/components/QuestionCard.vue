@@ -12,12 +12,16 @@
       </div>
     </div>
     <div class="controller-group">
-      <progress class="nes-progress is-small" :value="questionNumber * 10" max="100"></progress>
+      <progress
+        class="nes-progress is-small is-primary"
+        :value="questionNumber * 10"
+        max="100"
+      ></progress>
       <div class="nes-badge is-splited">
         <span class="is-primary">{{ questionNumber }}</span>
         <span class="is-dark">10</span>
       </div>
-      <button type="button" class="nes-btn is-success" id="confirm">Confirmar</button>
+      <button type="button" class="nes-btn is-success" @click="confirmAnswer">Confirmar</button>
     </div>
   </div>
 </template>
@@ -56,9 +60,13 @@ export default {
   },
   methods: {
     buttonController() {},
-    answerController() {
-      let valor = document.querySelector('input[name="answer"]:checked').value;
-      console.log(valor);
+    confirmAnswer() {
+      let value = document.querySelector('input[name="answer"]:checked');
+      if (!value) {
+        return;
+      }
+      value = value.getAttribute("id");
+      this.$emit("answer", value);
     }
   },
   mounted() {}
@@ -66,6 +74,9 @@ export default {
 </script>
 
 <style scoped>
+.card {
+  width: 600px;
+}
 .controller-group {
   display: flex;
   justify-content: space-between;
