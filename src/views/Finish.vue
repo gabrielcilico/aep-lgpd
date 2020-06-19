@@ -5,9 +5,10 @@
         <p class="title">JOGO FINALIZADO!</p>
         <p>
           Muito obrigado por jogar,
-          <span :class="classPoints" class="nes-text">{{player}}</span>!
+          <span :class="classPoints" class="nes-text">{{ player }}</span
+          >!
         </p>
-        <p :class="classPoints" class="nes-text">{{message}}</p>
+        <p :class="classPoints" class="nes-text">{{ message }}</p>
         <p>Tire um print desta tela e desafie seus amigos a superar sua pontuação!</p>
         <router-link class="nes-btn" to="/">Jogar novamente</router-link>
       </div>
@@ -15,7 +16,7 @@
     <div class="container">
       <div class="nes-badge">
         <span :class="classPoints">
-          <h2>{{hits}}</h2>
+          <h2>{{ hits }}</h2>
           <p>PONTOS!</p>
         </span>
       </div>

@@ -22,7 +22,7 @@ export default {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
   padding: 15px 20px;
 }
 </style>
