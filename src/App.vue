@@ -24,6 +24,8 @@ body {
   font-family: "Press Start 2P", cursive;
 }
 body {
+  /* background-image: url("https://i.redd.it/m6ptifyhde321.gif");
+  background-size: cover; */
   background-image: url("assets/img/background.png");
 }
 </style>

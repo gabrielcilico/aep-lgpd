@@ -3,9 +3,9 @@
     <h1 class="title">Começar</h1>
     <div class="nes-field">
       <label for="name_field">Seu nome</label>
-      <input type="text" id="name_field" class="nes-input" v-model="name" />
+      <input type="text" id="name_field" class="nes-input" v-model="name" @keyup.enter="validate" />
     </div>
-    <button type="button" class="nes-btn is-success" @click="validate">Começar</button>
+    <button type="button" class="nes-btn is-warning" @click="validate">Começar</button>
   </div>
 </template>
 
@@ -21,12 +21,19 @@ export default {
   methods: {
     validate() {
       let name = this.name;
-      if (!name || name.match(/[^A-Za-z0-9]/) || name.match(" ")) {
+      if (
+        !name ||
+        name.match(/[^A-Za-z0-9]/) ||
+        name.match(" ") ||
+        name.length < 3 ||
+        name.length > 12
+      ) {
         this.returnErrorMessage();
         this.name = "";
         return;
       }
-      this.$router.push(`/game/${name}`);
+      this.$store.state.player = name;
+      this.$router.push("/game");
     },
     returnErrorMessage() {
       this.$emit("error");
@@ -38,5 +45,8 @@ export default {
 <style scoped>
 .card {
   width: 600px;
+}
+button {
+  margin-top: 10px;
 }
 </style>

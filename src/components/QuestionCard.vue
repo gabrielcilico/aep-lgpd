@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ErrorModal v-if="hasError" @close="hasError = false" />
     <div class="nes-container is-dark with-title is-centered card">
       <h1 class="title">Pergunta #{{ questionNumber }}</h1>
       <p class="nes-text is-error">{{ question }}</p>
@@ -18,10 +19,15 @@
       </div>
     </div>
     <div class="controller-group">
-      <progress class="nes-progress is-warning" :value="questionNumber * 10" max="100"></progress>
-      <div class="nes-badge is-splited">
-        <span class="is-warning">{{ questionNumber }}</span>
-        <span class="is-dark">10</span>
+      <div class="progress-group">
+        <progress class="nes-progress is-warning" :value="questionNumber * 10" max="100"></progress>
+        <div class="progress-info">
+          <h3 class="nes-text is-warning">Progresso:</h3>
+          <div class="nes-badge is-splited">
+            <span class="is-warning">{{ questionNumber }}</span>
+            <span class="is-dark">10</span>
+          </div>
+        </div>
       </div>
       <button type="button" class="nes-btn is-warning" @click="confirmAnswer">Confirmar</button>
     </div>
@@ -29,8 +35,13 @@
 </template>
 
 <script>
+import ErrorModal from "@/components/ErrorModal.vue";
+
 export default {
   name: "QuestionCard",
+  components: {
+    ErrorModal
+  },
   props: {
     questionNumber: Number,
     question: String,
@@ -38,14 +49,16 @@ export default {
   },
   data() {
     return {
-      choosenAnswer: 1
+      choosenAnswer: 0,
+      hasError: false
     };
   },
   methods: {
-    buttonController() {},
     confirmAnswer() {
+      this.hasError = false;
       let value = this.choosenAnswer;
       if (!value) {
+        this.hasError = true;
         return;
       }
       this.$emit("answer", value);
@@ -67,11 +80,20 @@ export default {
   display: flex;
   justify-content: space-between;
   color: white;
-  align-items: center;
-  margin-top: 20px;
+  align-items: start;
+  margin-top: 15px;
 }
-.controller-group progress {
-  max-width: 40%;
+.progress-group {
+  width: 60%;
+}
+.progress-info {
+  display: flex;
+  align-items: center;
+}
+.progress-info h3 {
+  background-color: #212529;
+  padding: 5px 10px;
+  margin-right: 10px;
 }
 .answer-radio {
   border-top: 2px solid #fff !important;

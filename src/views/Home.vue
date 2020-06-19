@@ -29,9 +29,12 @@ export default {
     nameError() {
       this.message = "";
       this.message =
-        "Este nome não é válido! Tente usar um nome sem caracteres especiais e sem espaços.";
+        "Este nome não é válido! Tente usar um nome sem caracteres especiais e sem espaços. E lembre-se: o nome deve conter de 3 à 12 caracteres.";
       this.messageKey++;
     }
+  },
+  mounted() {
+    this.$store.state.player = "";
   }
 };
 </script>

@@ -13,10 +13,9 @@ const routes = [
     component: Home
   },
   {
-    path: "/game/:name?",
+    path: "/game",
     name: "Game",
-    component: Game,
-    props: true
+    component: Game
   },
   {
     path: "/finish",

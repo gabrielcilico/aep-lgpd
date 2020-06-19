@@ -1,292 +1,291 @@
 [
-    {
-        "number": 1,
-        "question": "A Lei n.º 13.709/2018 (Lei Geral de Proteção de Dados Pessoais) prevê a realização do tratamento de dados pessoais, mediante o consentimento do titular dos dados, para o cumprimento de obrigação legal ou regulatória e para a realização de estudos ou execução de contratos a pedido do titular. As hipóteses em questão são exemplos de",
-        "dica": "A primeira e a terceira alternativa estão incorretas",
-        "answers": [
-            {
-                "id": 1,
-                "title": "princípios das atividades de tratamento de dados pessoais."
-            },
-            {
-                "id": 2,
-                "title": "requisitos para o tratamento de dados pessoais sensíveis."
-            },
-            {
-                "id": 3,
-                "title": "tratamento de dados pessoais de crianças e adolecentes."
-            },
-            {
-                "id": 4,
-                "title": "direitos do titular dos dados."
-            },
-            {
-                "id": 5,
-                "title": "requisitos para o tratamento de dados pessoais."
-            }
-        ],
-        "idCorrectAnswer": 5
-    },
+  {
+    "number": 1,
+    "question": "A Lei n.º 13.709/2018 (Lei Geral de Proteção de Dados Pessoais) prevê a realização do tratamento de dados pessoais, mediante o consentimento do titular dos dados, para o cumprimento de obrigação legal ou regulatória e para a realização de estudos ou execução de contratos a pedido do titular. As hipóteses em questão são exemplos de",
+    "dica": "Não diz respeito à princípios das atividades de tratamento de dados pessoais",
+    "answers": [
+      {
+        "id": 1,
+        "title": "princípios das atividades de tratamento de dados pessoais"
+      },
+      {
+        "id": 2,
+        "title": "requisitos para o tratamento de dados pessoais sensíveis"
+      },
+      {
+        "id": 3,
+        "title": "tratamento de dados pessoais de crianças e adolecentes"
+      },
+      {
+        "id": 4,
+        "title": "direitos do titular dos dados"
+      },
+      {
+        "id": 5,
+        "title": "requisitos para o tratamento de dados pessoais"
+      }
+    ],
+    "idCorrectAnswer": 5
+  },
 
-    {
-        "number": 2,
-        "question": "Considere que, em um órgão público, foi detectada a necessidade da atribuição de responsáveis para manterem registro das operações de tratamento de dados pessoais. De acordo com a Lei nº 13.709/2018, quem devem ser esses responsáveis?",
-        "dica":"O presidente não exerce funções relacionadas ao tratamento de dados",
-        "answers": [
-            {
-                "id": 1,
-                "title": "Os agentes de tratamentos de dados e o conselho diretor."
-            },
-            {
-                "id": 2,
-                "title": "O controlador e o operador."
-            },
-            {
-                "id": 3,
-                "title": "O presidente da República e o controlador."
-            },
-            {
-                "id": 4,
-                "title": "A autoridade nacional e o operador."
-            },
-            {
-                "id": 5,
-                "title": "O governante e a autoridade nacional."
-            }
-        ],
-        "idCorrectAnswer": 2
-    },
-    
-    {
-        "number": 3,
-        "question": "A Lei n° 13.709/2018 (Lei Geral de Proteção de Dados) incide quanto ao cadastro de usuários e clientes, alterando a maneira como as organizações devem tratar dados pessoais, com vistas a proteger os direitos fundamentais de liberdade e de privacidade e a respeitar o livre desenvolvimento da personalidade, a dignidade e o exercício da cidadania. Considerando o disposto na referida lei, assinale a alternativa correta.",
-        "dica" : "Tudo que compartilhamos na internet deve ser consentido pelo dono das informações.",
-        "answers": [
-            {
-                "id": 1,
-                "title": "Essa lei aplica-se exclusivamente a dados coletados por meio digital."
-            },
-            {
-                "id": 2,
-                "title": "Para os fins dessa lei, considera-se dado pessoal qualquer informação relacionada a pessoa física ou jurídica identificada ou identificável."
-            },
-            {
-                "id": 3,
-                "title": "O tratamento de dados pessoais, bem como o compartilhamento desses dados, somente é permitido mediante consentimento do titular, salvo casos de exceção previstos na lei."
-            },
-            {
-                "id": 4,
-                "title": "Dados pessoais de crianças podem ser coletados sem consentimento prévio e armazenados para fins de contato com os pais ou o responsável legal."
-            },
-            {
-                "id": 5,
-                "title": "O consentimento do tratamento dos dados deve ser fornecido pelo titular antecipadamente à coleta dos dados e presume concordância com o compartilhamento dos respectivos dados pessoais com entidades parceiras por tempo indeterminado."
-            }
-        ],
-        "idCorrectAnswer": 3
-    },
+  {
+    "number": 2,
+    "question": "Considere que, em um órgão público, foi detectada a necessidade da atribuição de responsáveis para manterem registro das operações de tratamento de dados pessoais. De acordo com a Lei nº 13.709/2018, quem devem ser esses responsáveis?",
+    "dica": "O presidente não exerce funções relacionadas ao tratamento de dados",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Os agentes de tratamentos de dados e o conselho diretor"
+      },
+      {
+        "id": 2,
+        "title": "O controlador e o operador"
+      },
+      {
+        "id": 3,
+        "title": "O presidente da República e o controlador"
+      },
+      {
+        "id": 4,
+        "title": "A autoridade nacional e o operador"
+      },
+      {
+        "id": 5,
+        "title": "O governante e a autoridade nacional"
+      }
+    ],
+    "idCorrectAnswer": 2
+  },
 
-    {
-        "number": 4,
-        "question": "Em que ano foi sancionada a LGPD?",
-        "dica": "A lei foi sansionada recentemente.",
-        "answers": [
-            {
-                "id": 1,
-                "title": "2015."
-            },
-            {
-                "id": 2,
-                "title": "2016."
-            },
-            {
-                "id": 3,
-                "title": "2017."
-            },
-            {
-                "id": 4,
-                "title": "2018."
-            },
-            {
-                "id": 5,
-                "title": "2019."
-            }
-        ],
-        "idCorrectAnswer": 4
-    },
+  {
+    "number": 3,
+    "question": "A Lei n° 13.709/2018 (Lei Geral de Proteção de Dados) incide quanto ao cadastro de usuários e clientes, alterando a maneira como as organizações devem tratar dados pessoais, com vistas a proteger os direitos fundamentais de liberdade e de privacidade e a respeitar o livre desenvolvimento da personalidade, a dignidade e o exercício da cidadania. Considerando o disposto na referida lei, assinale a alternativa correta",
+    "dica": "Tudo que compartilhamos na internet deve ser consentido pelo dono das informações",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Essa lei aplica-se exclusivamente a dados coletados por meio digital"
+      },
+      {
+        "id": 2,
+        "title": "Para os fins dessa lei, considera-se dado pessoal qualquer informação relacionada a pessoa física ou jurídica identificada ou identificável"
+      },
+      {
+        "id": 3,
+        "title": "O tratamento de dados pessoais, bem como o compartilhamento desses dados, somente é permitido mediante consentimento do titular, salvo casos de exceção previstos na lei"
+      },
+      {
+        "id": 4,
+        "title": "Dados pessoais de crianças podem ser coletados sem consentimento prévio e armazenados para fins de contato com os pais ou o responsável legal"
+      },
+      {
+        "id": 5,
+        "title": "O consentimento do tratamento dos dados deve ser fornecido pelo titular antecipadamente à coleta dos dados e presume concordância com o compartilhamento dos respectivos dados pessoais com entidades parceiras por tempo indeterminado"
+      }
+    ],
+    "idCorrectAnswer": 3
+  },
 
+  {
+    "number": 4,
+    "question": "Em que ano foi sancionada a LGPD?",
+    "dica": "A lei foi sansionada durante a gestão de Temer",
+    "answers": [
+      {
+        "id": 1,
+        "title": "2015"
+      },
+      {
+        "id": 2,
+        "title": "2016"
+      },
+      {
+        "id": 3,
+        "title": "2017"
+      },
+      {
+        "id": 4,
+        "title": "2018"
+      },
+      {
+        "id": 5,
+        "title": "2019"
+      }
+    ],
+    "idCorrectAnswer": 4
+  },
 
-    {
-        "number": 5,
-        "question": "O que é a ANPD?",
-        "dica":"As questões 1 e 5 estão incorretas.",
-        "answers": [
-            {
-                "id": 1,
-                "title": "Uma entidade sem fins lucrativos criada para tratar dados."
-            },
-            {
-                "id": 2,
-                "title": "Órgão responsável por acompanhar e aplicar sanções descritas na lei Geral de Proteção de Dados."
-            },
-            {
-                "id": 3,
-                "title": "Uma organização internacional de apoio aos governos para o tratamento de dados."
-            },
-            {
-                "id": 4,
-                "title": "Uma agência que vai regular o aumento de despesas relativo ao tratamento de dados pessoais."
-            },
-            {
-                "id": 5,
-                "title": "É o Órgão responsável por prender ladrões de dados."
-            }
-        ],
-        "idCorrectAnswer": 2
-    },
+  {
+    "number": 5,
+    "question": "O que é a ANPD?",
+    "dica": "Não é uma entidade sem fins lucrativos criada para tratar dados",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Uma entidade sem fins lucrativos criada para tratar dados"
+      },
+      {
+        "id": 2,
+        "title": "Órgão responsável por acompanhar e aplicar sanções descritas na lei Geral de Proteção de Dados"
+      },
+      {
+        "id": 3,
+        "title": "Uma organização internacional de apoio aos governos para o tratamento de dados"
+      },
+      {
+        "id": 4,
+        "title": "Uma agência que vai regular o aumento de despesas relativo ao tratamento de dados pessoais"
+      },
+      {
+        "id": 5,
+        "title": "É o Órgão responsável por prender ladrões de dados"
+      }
+    ],
+    "idCorrectAnswer": 2
+  },
 
-    {
-        "number": 6,
-        "question": "Quem é o controlador de dados?",
-        "dica": "Um controlador de dados não é necessariamente um profissional de TI.",
-        "answers": [
-            {
-                "id": 1,
-                "title": "Um profissional de TI."
-            },
-            {
-                "id": 2,
-                "title": "Um advogado."
-            },
-            {
-                "id": 3,
-                "title": "Um membro da banda bonde do tigrão."
-            },
-            {
-                "id": 4,
-                "title": "Profissional responsável pelo tratamento de dados pessoais."
-            },
-            {
-                "id": 5,
-                "title": "O CEO da empresa, que responde pelos dados pessoais."
-            }
-        ],
-        "idCorrectAnswer": 4
-    },
+  {
+    "number": 6,
+    "question": "Quem é o controlador de dados?",
+    "dica": "Um controlador de dados não é necessariamente um profissional de TI",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Um profissional de TI"
+      },
+      {
+        "id": 2,
+        "title": "Um advogado"
+      },
+      {
+        "id": 3,
+        "title": "Um membro da banda bonde do tigrão"
+      },
+      {
+        "id": 4,
+        "title": "Profissional responsável pelo tratamento de dados pessoais"
+      },
+      {
+        "id": 5,
+        "title": "O CEO da empresa, que responde pelos dados pessoais"
+      }
+    ],
+    "idCorrectAnswer": 4
+  },
 
-    {
-        "number": 7,
-        "question": "O que é tratamento de dados pessoais?",
-        "dica":"Digamos que, nem a questão 1 nem a 3 é a alternativa correta, porém não estão erradas.",
-        "answers": [
-            {
-                "id": 1,
-                "title": "Organização dos dados pessoais em pastas."
-            },
-            {
-                "id": 2,
-                "title": "Conjunto de operações efetuadas sobre dados pessoais, por meios manuais ou automatizados."
-            },
-            {
-                "id": 3,
-                "title": "Proteção dos dados pessoais contra vazamentos"
-            },
-            {
-                "id": 4,
-                "title": "Filtragem de dados para verificar quais são os mais necessários a serem protegidos"
-            },
-            {
-                "id": 5,
-                "title": "Todas as alternativas"
-            }
-        ],
-        "idCorrectAnswer": 5
-    },
+  {
+    "number": 7,
+    "question": "O que é tratamento de dados pessoais?",
+    "dica": "Digamos que, nem a 'Organização dos dados pessoais em pastas' nem 'Proteção dos dados pessoais contra vazamentos' é a alternativa correta, porém não estão erradas",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Organização dos dados pessoais em pastas"
+      },
+      {
+        "id": 2,
+        "title": "Conjunto de operações efetuadas sobre dados pessoais, por meios manuais ou automatizados"
+      },
+      {
+        "id": 3,
+        "title": "Proteção dos dados pessoais contra vazamentos"
+      },
+      {
+        "id": 4,
+        "title": "Filtragem de dados para verificar quais são os mais necessários a serem protegidos"
+      },
+      {
+        "id": 5,
+        "title": "Todas as alternativas"
+      }
+    ],
+    "idCorrectAnswer": 5
+  },
 
-    {
-        "number": 8,
-        "question": "A LGPD impactará apenas empresas:",
-        "dica": "Nem só as empresas de tecnologia serão afetadas.",
-        "answers": [
-            {
-                "id": 1,
-                "title": "Que trabalhem com comércio eletrônico."
-            },
-            {
-                "id": 2,
-                "title": "Que recebam e armazenem documentos físicos."
-            },
-            {
-                "id": 3,
-                "title": "Que são do ramo de jogos."
-            },
-            {
-                "id": 4,
-                "title": "Que recebam e armazenem documentos virtuais."
-            },
-            {
-                "id": 5,
-                "title": "Que recebam e armazenem documentos físicos e virtuais."
-            }
-        ],
-        "idCorrectAnswer": 5
-    },
+  {
+    "number": 8,
+    "question": "A LGPD impactará apenas empresas:",
+    "dica": "Nem só as empresas de tecnologia serão afetadas",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Que trabalhem com comércio eletrônico"
+      },
+      {
+        "id": 2,
+        "title": "Que recebam e armazenem documentos físicos"
+      },
+      {
+        "id": 3,
+        "title": "Que são do ramo de jogos"
+      },
+      {
+        "id": 4,
+        "title": "Que recebam e armazenem documentos virtuais"
+      },
+      {
+        "id": 5,
+        "title": "Que recebam e armazenem documentos físicos e virtuais"
+      }
+    ],
+    "idCorrectAnswer": 5
+  },
 
-    {
-        "number": 9,
-        "question": "Quantas são as hipóteses que a lei autoriza a realização do tratamento de dados pessoais (bases legais)?",
-        "dica": "A questão 1 e 4 estão incorretas.",
-        "answers": [
-            {
-                "id": 1,
-                "title": "5."
-            },
-            {
-                "id": 2,
-                "title": "10."
-            },
-            {
-                "id": 3,
-                "title": "12."
-            },
-            {
-                "id": 4,
-                "title": "15."
-            },
-            {
-                "id": 5,
-                "title": "458."
-            }
-        ],
-        "idCorrectAnswer": 2
-    },
+  {
+    "number": 9,
+    "question": "Quantas são as hipóteses que a lei autoriza a realização do tratamento de dados pessoais (bases legais)?",
+    "dica": "Os valores 5 e 15 são incorretos",
+    "answers": [
+      {
+        "id": 1,
+        "title": "5"
+      },
+      {
+        "id": 2,
+        "title": "10"
+      },
+      {
+        "id": 3,
+        "title": "12"
+      },
+      {
+        "id": 4,
+        "title": "15"
+      },
+      {
+        "id": 5,
+        "title": "458"
+      }
+    ],
+    "idCorrectAnswer": 2
+  },
 
-    {
-        "number": 10,
-        "question": "Dentre as bases legais que autorizam o tratamento dos dados pessoais, qual ou quais dessas NÃO estão previstas na lei?",
-        "dica": "Consentimento pelo titular é uma das principais bases, assim como o cumprimento pela obrigação legal.",
-        "answers": [
-            {
-                "id": 1,
-                "title": "Consentimento pelo titular."
-            },
-            {
-                "id": 2,
-                "title": "Cumprimento pela obrigação legal."
-            },
-            {
-                "id": 3,
-                "title": "Execução do contrato."
-            },
-            {
-                "id": 4,
-                "title": "Princípio da impessoalidade."
-            },
-            {
-                "id": 5,
-                "title": "Quando necessário para atender aos interesses legítimos do controlador ou de terceiros."
-            }
-        ],
-        "idCorrectAnswer": 4
-    }
+  {
+    "number": 10,
+    "question": "Dentre as bases legais que autorizam o tratamento dos dados pessoais, qual ou quais dessas NÃO estão previstas na lei?",
+    "dica": "Consentimento pelo titular é uma das principais bases, assim como o cumprimento pela obrigação legal",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Consentimento pelo titular"
+      },
+      {
+        "id": 2,
+        "title": "Cumprimento pela obrigação legal"
+      },
+      {
+        "id": 3,
+        "title": "Execução do contrato"
+      },
+      {
+        "id": 4,
+        "title": "Princípio da impessoalidade"
+      },
+      {
+        "id": 5,
+        "title": "Quando necessário para atender aos interesses legítimos do controlador ou de terceiros"
+      }
+    ],
+    "idCorrectAnswer": 4
+  }
 ]

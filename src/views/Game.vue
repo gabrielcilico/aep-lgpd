@@ -45,6 +45,7 @@ export default {
       openMessage: false,
       progress: 100,
       cardKey: 1,
+      player: this.$store.state.player,
       questions: dataQuestions,
       currentQuestion: {},
       currentNumberQuestion: 0
@@ -54,14 +55,14 @@ export default {
     getAnswer(value) {
       let message = "";
       if (this.currentQuestion.idCorrectAnswer == value) {
-        message = "Parabéns! Você acertou!";
+        message = `Parabéns, ${this.player}! Você acertou!`;
         this.hits++;
       } else {
         let answer = this.currentQuestion.answers.filter(
           answer => answer.id == this.currentQuestion.idCorrectAnswer
         )[0];
         message =
-          "Oops! Você Errou! Na verdade a resposta correta é '" +
+          `Oops, ${this.player}! Você Errou! Na verdade a resposta correta é '` +
           answer.title +
           "'...";
       }
@@ -81,6 +82,9 @@ export default {
     updateQuestion() {
       if (this.questions.length > this.currentNumberQuestion) {
         this.currentQuestion = this.questions[this.currentNumberQuestion];
+        this.currentQuestion.answers = this.currentQuestion.answers.sort(
+          () => 0.5 - Math.random()
+        );
       }
       this.currentNumberQuestion++;
     },
@@ -92,7 +96,7 @@ export default {
     timerControl() {
       this.progress = 100;
       let timer = setInterval(() => {
-        this.progress -= 10;
+        this.progress -= 5;
         if (this.progress <= 0 || !this.openMessage) {
           this.nextQuestion();
           clearInterval(timer);
@@ -104,7 +108,15 @@ export default {
     }
   },
   mounted() {
+    if (!this.$store.state.player) {
+      this.$router.push("/");
+    }
     this.updateQuestion();
+  },
+  watch: {
+    hits() {
+      this.$store.state.hits = this.hits;
+    }
   }
 };
 </script>
