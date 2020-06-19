@@ -14,19 +14,29 @@ export default {
   name: "LoginCard",
   data() {
     return {
-      name: ""
+      name: "",
+      dialog: false
     };
   },
   methods: {
     validate() {
-      this.$router.push("/game/");
+      let name = this.name;
+      if (!name || name.match(/[^A-Za-z0-9]/) || name.match(" ")) {
+        this.returnErrorMessage();
+        this.name = "";
+        return;
+      }
+      this.$router.push(`/game/${name}`);
+    },
+    returnErrorMessage() {
+      this.$emit("error");
     }
   }
 };
 </script>
 
-<style>
+<style scoped>
 .card {
-  max-width: 600px;
+  width: 600px;
 }
 </style>
