@@ -1,16 +1,25 @@
 <template>
   <div class="content">
     <div class="container">
-      <div href="#" class="nes-badge is-splited">
-        <span class="is-dark">HITS</span>
-        <span class="is-warning">{{hits}}</span>
+      <div class="nes-badge is-splited badge">
+        <span class="is-dark">ACERTOS</span>
+        <span class="is-warning">{{ hits }}</span>
+      </div>
+      <div class="nes-badge is-splited tips">
+        <span class="is-dark">DICAS</span>
+        <span class="is-warning">{{ $store.state.tips }}</span>
       </div>
     </div>
     <div class="container" v-if="openMessage">
       <div class="content">
         <MessageCard :message="message" :key="cardKey" />
         <div class="options">
-          <progress class="nes-progress is-primary" :value="progress" :key="progress" max="100"></progress>
+          <progress
+            class="nes-progress is-primary"
+            :value="progress"
+            :key="progress"
+            max="100"
+          ></progress>
           <button type="button" class="nes-btn is-primary" @click="pressContinue">Continuar</button>
         </div>
       </div>
@@ -20,6 +29,7 @@
         :questionNumber="currentQuestion.number"
         :question="currentQuestion.question"
         :answers="currentQuestion.answers"
+        :tip="currentQuestion.tip"
         @answer="getAnswer"
         v-if="currentNumberQuestion <= 10"
       />
@@ -82,9 +92,7 @@ export default {
     updateQuestion() {
       if (this.questions.length > this.currentNumberQuestion) {
         this.currentQuestion = this.questions[this.currentNumberQuestion];
-        this.currentQuestion.answers = this.currentQuestion.answers.sort(
-          () => 0.5 - Math.random()
-        );
+        this.currentQuestion.answers = this.currentQuestion.answers.sort(() => 0.5 - Math.random());
       }
       this.currentNumberQuestion++;
     },
@@ -111,6 +119,7 @@ export default {
     if (!this.$store.state.player) {
       this.$router.push("/");
     }
+    this.$store.state.tips = 3;
     this.updateQuestion();
   },
   watch: {
@@ -140,5 +149,11 @@ export default {
 }
 .options progress {
   max-width: 60%;
+}
+.badge {
+  width: 15em !important;
+}
+.tips {
+  margin-left: 20px;
 }
 </style>

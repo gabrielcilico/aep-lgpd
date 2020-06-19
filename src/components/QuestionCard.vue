@@ -1,6 +1,7 @@
 <template>
   <div>
     <ErrorModal v-if="hasError" @close="hasError = false" />
+    <ErrorModal v-if="hasTip" :message="tip" @close="hasTip = false" />
     <div class="nes-container is-dark with-title is-centered card">
       <h1 class="title">Pergunta #{{ questionNumber }}</h1>
       <p class="nes-text is-error">{{ question }}</p>
@@ -29,7 +30,10 @@
           </div>
         </div>
       </div>
-      <button type="button" class="nes-btn is-warning" @click="confirmAnswer">Confirmar</button>
+      <div class="progress-info">
+        <button class="nes-btn tip" v-if="$store.state.tips > 0" @click="showTip">Dica</button>
+        <button type="button" class="nes-btn is-warning" @click="confirmAnswer">Confirmar</button>
+      </div>
     </div>
   </div>
 </template>
@@ -45,12 +49,14 @@ export default {
   props: {
     questionNumber: Number,
     question: String,
-    answers: Array
+    answers: Array,
+    tip: String
   },
   data() {
     return {
       choosenAnswer: 0,
-      hasError: false
+      hasError: false,
+      hasTip: false
     };
   },
   methods: {
@@ -62,6 +68,14 @@ export default {
         return;
       }
       this.$emit("answer", value);
+    },
+    showTip() {
+      if (this.$store.state.tips <= 0) {
+        this.hasTip = false;
+        return;
+      }
+      this.$store.state.tips--;
+      this.hasTip = true;
     }
   }
 };
@@ -76,6 +90,9 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.tip {
+  margin: 0 10px;
+}
 .controller-group {
   display: flex;
   justify-content: space-between;
@@ -84,14 +101,13 @@ export default {
   margin-top: 15px;
 }
 .progress-group {
-  width: 60%;
+  width: 50%;
 }
 .progress-info {
   display: flex;
   align-items: center;
 }
 .progress-info h3 {
-  background-color: #212529;
   padding: 5px 10px;
   margin-right: 10px;
 }

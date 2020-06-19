@@ -12,13 +12,17 @@ import MessageCard from "@/components/MessageCard.vue";
 
 export default {
   name: "ErrorModal",
+  props: {
+    message: {
+      type: String,
+      default: "Você precisa selecionar uma opção!"
+    }
+  },
   components: {
     MessageCard
   },
   data() {
-    return {
-      message: "Você precisa selecionar uma opção!"
-    };
+    return {};
   },
   methods: {
     closeModal() {

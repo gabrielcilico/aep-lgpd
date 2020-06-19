@@ -2,7 +2,7 @@
   {
     "number": 1,
     "question": "A Lei n.º 13.709/2018 (Lei Geral de Proteção de Dados Pessoais) prevê a realização do tratamento de dados pessoais, mediante o consentimento do titular dos dados, para o cumprimento de obrigação legal ou regulatória e para a realização de estudos ou execução de contratos a pedido do titular. As hipóteses em questão são exemplos de",
-    "dica": "Não diz respeito à princípios das atividades de tratamento de dados pessoais",
+    "tip": "Não diz respeito à princípios das atividades de tratamento de dados pessoais",
     "answers": [
       {
         "id": 1,
@@ -31,7 +31,7 @@
   {
     "number": 2,
     "question": "Considere que, em um órgão público, foi detectada a necessidade da atribuição de responsáveis para manterem registro das operações de tratamento de dados pessoais. De acordo com a Lei nº 13.709/2018, quem devem ser esses responsáveis?",
-    "dica": "O presidente não exerce funções relacionadas ao tratamento de dados",
+    "tip": "O presidente não exerce funções relacionadas ao tratamento de dados",
     "answers": [
       {
         "id": 1,
@@ -60,7 +60,7 @@
   {
     "number": 3,
     "question": "A Lei n° 13.709/2018 (Lei Geral de Proteção de Dados) incide quanto ao cadastro de usuários e clientes, alterando a maneira como as organizações devem tratar dados pessoais, com vistas a proteger os direitos fundamentais de liberdade e de privacidade e a respeitar o livre desenvolvimento da personalidade, a dignidade e o exercício da cidadania. Considerando o disposto na referida lei, assinale a alternativa correta",
-    "dica": "Tudo que compartilhamos na internet deve ser consentido pelo dono das informações",
+    "tip": "Tudo que compartilhamos na internet deve ser consentido pelo dono das informações",
     "answers": [
       {
         "id": 1,
@@ -68,7 +68,7 @@
       },
       {
         "id": 2,
-        "title": "Para os fins dessa lei, considera-se dado pessoal qualquer informação relacionada a pessoa física ou jurídica identificada ou identificável"
+        "title": "Para os fins dessa lei, considera-se dado pessoal qualquer informação relacionada a pessoa física ou jurítip identificada ou identificável"
       },
       {
         "id": 3,
@@ -89,7 +89,7 @@
   {
     "number": 4,
     "question": "Em que ano foi sancionada a LGPD?",
-    "dica": "A lei foi sansionada durante a gestão de Temer",
+    "tip": "A lei foi sansionada durante a gestão de Temer",
     "answers": [
       {
         "id": 1,
@@ -118,7 +118,7 @@
   {
     "number": 5,
     "question": "O que é a ANPD?",
-    "dica": "Não é uma entidade sem fins lucrativos criada para tratar dados",
+    "tip": "Não é uma entidade sem fins lucrativos criada para tratar dados",
     "answers": [
       {
         "id": 1,
@@ -147,7 +147,7 @@
   {
     "number": 6,
     "question": "Quem é o controlador de dados?",
-    "dica": "Um controlador de dados não é necessariamente um profissional de TI",
+    "tip": "Um controlador de dados não é necessariamente um profissional de TI",
     "answers": [
       {
         "id": 1,
@@ -176,7 +176,7 @@
   {
     "number": 7,
     "question": "O que é tratamento de dados pessoais?",
-    "dica": "Digamos que, nem a 'Organização dos dados pessoais em pastas' nem 'Proteção dos dados pessoais contra vazamentos' é a alternativa correta, porém não estão erradas",
+    "tip": "Digamos que, nem a 'Organização dos dados pessoais em pastas' nem 'Proteção dos dados pessoais contra vazamentos' é a alternativa correta, porém não estão erradas",
     "answers": [
       {
         "id": 1,
@@ -205,7 +205,7 @@
   {
     "number": 8,
     "question": "A LGPD impactará apenas empresas:",
-    "dica": "Nem só as empresas de tecnologia serão afetadas",
+    "tip": "Nem só as empresas de tecnologia serão afetadas",
     "answers": [
       {
         "id": 1,
@@ -234,7 +234,7 @@
   {
     "number": 9,
     "question": "Quantas são as hipóteses que a lei autoriza a realização do tratamento de dados pessoais (bases legais)?",
-    "dica": "Os valores 5 e 15 são incorretos",
+    "tip": "Os valores 5 e 15 são incorretos",
     "answers": [
       {
         "id": 1,
@@ -263,7 +263,7 @@
   {
     "number": 10,
     "question": "Dentre as bases legais que autorizam o tratamento dos dados pessoais, qual ou quais dessas NÃO estão previstas na lei?",
-    "dica": "Consentimento pelo titular é uma das principais bases, assim como o cumprimento pela obrigação legal",
+    "tip": "Consentimento pelo titular é uma das principais bases, assim como o cumprimento pela obrigação legal",
     "answers": [
       {
         "id": 1,
