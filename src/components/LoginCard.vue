@@ -3,7 +3,14 @@
     <h1 class="title">Começar</h1>
     <div class="nes-field">
       <label for="name_field">Seu nome</label>
-      <input type="text" id="name_field" class="nes-input" v-model="name" @keyup.enter="validate" />
+      <input
+        type="text"
+        id="name_field"
+        class="nes-input"
+        v-model="name"
+        @keyup.enter="validate"
+        autocomplete="off"
+      />
     </div>
     <button type="button" class="nes-btn is-warning" @click="validate">Começar</button>
   </div>
