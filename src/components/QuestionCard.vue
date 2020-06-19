@@ -4,24 +4,26 @@
       <h1 class="title">Pergunta #{{ questionNumber }}</h1>
       <p class="nes-text is-error">{{ question }}</p>
 
-      <div v-for="answer in answers" :key="answer.id">
+      <div v-for="answer in answers" :key="answer.id" class="answer-radio">
         <label>
-          <input type="radio" :id="answer.id" class="nes-radio" name="answer" />
+          <input
+            type="radio"
+            v-model="choosenAnswer"
+            :value="answer.id"
+            class="nes-radio"
+            name="answer"
+          />
           <span>{{ answer.title }}</span>
         </label>
       </div>
     </div>
     <div class="controller-group">
-      <progress
-        class="nes-progress is-small is-primary"
-        :value="questionNumber * 10"
-        max="100"
-      ></progress>
+      <progress class="nes-progress is-warning" :value="questionNumber * 10" max="100"></progress>
       <div class="nes-badge is-splited">
-        <span class="is-primary">{{ questionNumber }}</span>
+        <span class="is-warning">{{ questionNumber }}</span>
         <span class="is-dark">10</span>
       </div>
-      <button type="button" class="nes-btn is-success" @click="confirmAnswer">Confirmar</button>
+      <button type="button" class="nes-btn is-warning" @click="confirmAnswer">Confirmar</button>
     </div>
   </div>
 </template>
@@ -32,50 +34,34 @@ export default {
   props: {
     questionNumber: Number,
     question: String,
-    answers: {
-      type: Array,
-      default: [
-        {
-          id: 1,
-          title: "Resposta 1"
-        },
-        {
-          id: 2,
-          title: "Resposta 2"
-        },
-        {
-          id: 3,
-          title: "Resposta 3"
-        },
-        {
-          id: 4,
-          title: "Resposta 4"
-        },
-        {
-          id: 5,
-          title: "Resposta 5"
-        }
-      ]
-    }
+    answers: Array
+  },
+  data() {
+    return {
+      choosenAnswer: 1
+    };
   },
   methods: {
     buttonController() {},
     confirmAnswer() {
-      let value = document.querySelector('input[name="answer"]:checked');
+      let value = this.choosenAnswer;
       if (!value) {
         return;
       }
-      value = value.getAttribute("id");
       this.$emit("answer", value);
     }
-  },
-  mounted() {}
+  }
 };
 </script>
 
 <style scoped>
 .card {
-  width: 600px;
+  min-width: 600px;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .controller-group {
   display: flex;
@@ -86,5 +72,10 @@ export default {
 }
 .controller-group progress {
   max-width: 40%;
+}
+.answer-radio {
+  border-top: 2px solid #fff !important;
+  padding-top: 10px;
+  width: 80%;
 }
 </style>

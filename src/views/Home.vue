@@ -1,10 +1,10 @@
 <template>
   <div class="content">
     <div class="container">
-      <MessageCard :message="message" />
+      <MessageCard :message="message" :key="messageKey" />
     </div>
     <div class="container">
-      <LoginCard />
+      <LoginCard @error="nameError" />
     </div>
   </div>
 </template>
@@ -21,8 +21,17 @@ export default {
   },
   data() {
     return {
-      message: "Seja bem vindo! Escolha um nome e comece a jogar!"
+      message: "Seja bem vindo! Escolha um nome e comece a jogar!",
+      messageKey: 1
     };
+  },
+  methods: {
+    nameError() {
+      this.message = "";
+      this.message =
+        "Este nome não é válido! Tente usar um nome sem caracteres especiais e sem espaços.";
+      this.messageKey++;
+    }
   }
 };
 </script>
