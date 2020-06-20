@@ -38,7 +38,7 @@ export default {
         "Você pode melhorar... jogue novamente!",
         "Você está acima da média, mas ainda há o que aprender!",
         "Muito bem, você é quase um gênio!",
-        "Incrível, você é quase gabaritou!",
+        "Incrível, você quase gabaritou!",
         "Você é o mestre supremo do universo LGPD, perfeito!"
       ]
     };
