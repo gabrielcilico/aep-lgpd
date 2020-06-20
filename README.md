@@ -34,5 +34,5 @@ $ npm install
 $ npm run serve
 ```
 
-Feito isso, o será liberado um servidor em localhost que por padrão tenta utilizar a porta 8080.
+Feito isso, será liberado um servidor em localhost que por padrão tenta utilizar a porta 8080.
 Caso surjam problemas, entre em contato.
