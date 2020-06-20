@@ -1,6 +1,7 @@
 # Quiz LGPD
 
-![Tela inicial](https://i.imgur.com/efCBX5h.png)
+> Jogue agora, [clicando aqui](https://gabrielcilico.github.io/aep-lgpd).
+> ![Tela inicial](https://i.imgur.com/efCBX5h.png)
 
 > Este projeto é referente ao trabalho do segundo bimestre das disciplinas descritas abaixo. Este tem o intuito de ser um jogo que estimule o aprendizado de seus jogadores a respeito da Lei Geral de Proteção dos Dados que deve entrar em vigor em breve no Brasil.
 
