@@ -5,8 +5,7 @@
         <p class="title">JOGO FINALIZADO!</p>
         <p>
           Muito obrigado por jogar,
-          <span :class="classPoints" class="nes-text">{{ player }}</span
-          >!
+          <span :class="classPoints" class="nes-text">{{ player }}</span>!
         </p>
         <p :class="classPoints" class="nes-text">{{ message }}</p>
         <p>Tire um print desta tela e desafie seus amigos a superar sua pontuação!</p>
@@ -105,6 +104,7 @@ export default {
   padding: 30px;
 }
 .card {
+  width: 100%;
   max-width: 720px;
 }
 button {

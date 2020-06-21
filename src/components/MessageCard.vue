@@ -1,9 +1,7 @@
 <template>
   <section class="card">
     <i class="nes-bcrikko"></i>
-    <p class="nes-balloon from-left nes-pointer">
-      {{ typeValue }}
-    </p>
+    <p class="nes-balloon from-left nes-pointer">{{ typeValue }}</p>
   </section>
 </template>
 
@@ -39,7 +37,7 @@ export default {
 
 <style scoped>
 .card {
-  width: 600px;
+  width: 95vw;
   display: flex;
   align-items: flex-end;
 }

@@ -1,8 +1,10 @@
 <template>
   <div class="modal">
-    <MessageCard :message="message" />
-    <div class="control">
-      <button type="button" class="nes-btn is-error" @click="closeModal">OK</button>
+    <div class="baloon">
+      <MessageCard :message="message" style="width: 100%" />
+      <div class="control">
+        <button type="button" class="nes-btn is-error" @click="closeModal">OK</button>
+      </div>
     </div>
   </div>
 </template>
@@ -21,9 +23,6 @@ export default {
   components: {
     MessageCard
   },
-  data() {
-    return {};
-  },
   methods: {
     closeModal() {
       this.$emit("close");
@@ -34,7 +33,7 @@ export default {
 
 <style>
 .modal {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,9 +45,14 @@ export default {
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 10;
 }
+.baloon {
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+}
 .control {
   display: flex;
   flex-direction: row-reverse;
-  width: 550px;
+  margin-right: 35px;
 }
 </style>

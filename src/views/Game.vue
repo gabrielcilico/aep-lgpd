@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <div class="container">
+    <div class="container badges">
       <div class="nes-badge is-splited badge">
         <span class="is-dark">ACERTOS</span>
         <span class="is-warning">{{ hits }}</span>
@@ -14,12 +14,7 @@
       <div class="content">
         <MessageCard :message="message" :key="cardKey" />
         <div class="options">
-          <progress
-            class="nes-progress is-primary"
-            :value="progress"
-            :key="progress"
-            max="100"
-          ></progress>
+          <progress class="nes-progress is-primary" :value="progress" :key="progress" max="100"></progress>
           <button type="button" class="nes-btn is-primary" @click="pressContinue">Continuar</button>
         </div>
       </div>
@@ -92,7 +87,9 @@ export default {
     updateQuestion() {
       if (this.questions.length > this.currentNumberQuestion) {
         this.currentQuestion = this.questions[this.currentNumberQuestion];
-        this.currentQuestion.answers = this.currentQuestion.answers.sort(() => 0.5 - Math.random());
+        this.currentQuestion.answers = this.currentQuestion.answers.sort(
+          () => 0.5 - Math.random()
+        );
       }
       this.currentNumberQuestion++;
     },
@@ -137,6 +134,7 @@ export default {
 }
 .container {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-content: center;
   padding: 30px;
@@ -149,6 +147,11 @@ export default {
 }
 .options progress {
   max-width: 60%;
+}
+.badges {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 .badge {
   width: 15em !important;

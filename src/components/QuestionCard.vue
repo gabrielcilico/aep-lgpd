@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="structure">
     <ErrorModal v-if="hasError" @close="hasError = false" />
     <ErrorModal v-if="hasTip" :message="tip" @close="hasTip = false" />
     <div class="nes-container is-dark with-title is-centered card">
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="progress-info">
+      <div class="actions">
         <button class="nes-btn tip" v-if="$store.state.tips > 0" @click="showTip">Dica</button>
         <button type="button" class="nes-btn is-warning" @click="confirmAnswer">Confirmar</button>
       </div>
@@ -82,30 +82,35 @@ export default {
 </script>
 
 <style scoped>
+.structure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tip {
+  margin-right: 10px;
+}
 .card {
-  min-width: 600px;
-  max-width: 1280px;
+  max-width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.tip {
-  margin: 0 10px;
-}
 .controller-group {
+  width: 90vw;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
   color: white;
-  align-items: start;
+  justify-content: space-between;
+  align-content: center;
   margin-top: 15px;
 }
-.progress-group {
-  width: 50%;
-}
 .progress-info {
+  max-width: 85vw;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .progress-info h3 {
   padding: 5px 10px;
